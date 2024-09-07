@@ -1,17 +1,135 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-button {
-  padding: 10px 20px;
-  background-color: #4CAF50;
+body{
+  width: 100%;
+  height: 100vh;
+  background: rgb(194,186,171);
+  background: linear-gradient(180deg, rgb(191, 196, 198) 29%, rgb(140, 165, 198) 92%);;
+}
+.resume{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  font-family:'Courier New', Courier, monospace;
+  /* padding: 5px; */
+}
+.personalInfo{
+  padding: 0px 0px 10px 0px;
+}
+.personalInfo .heading{
+  background-color: rgb(71, 67, 67);
   color: white;
-  border: none;
-  cursor: pointer;
+  padding: 2px;
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
 }
-
-button:hover {
-  background-color: #45a049;
+.personalInfo .heading #infotoggle{
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+}
+.personalInfo .content{
+  display: inline-block;
+  margin-left: 7px;
+  padding: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600; 
+  margin-top: 7px;
+}
+.personalInfo .content p{
+  padding: 2px;
+}
+.education{
+  background-color: rgb(71, 67, 67);
+  color: white;
+  padding: 5px 6px;
+  font-family:'Courier New', Courier, monospace; 
+}
+.Education .heading{
+  background-color: rgb(71, 67, 67);
+  color: white;
+  padding: 5px;
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+.Education .heading #edutoggle{
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+}
+.Education p{
+  margin-top: 5px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: 600; 
+}
+.Skill{
+  padding: 6px 0px;
+}
+.Skill .heading {
+  background-color: rgb(71, 67, 67);
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+}
+.Skill .heading #skilltoggle{
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+}
+.skills{
+  margin-left: 8px;
+}
+.Skill .skillcontent{
+  margin-top: 7px;
+  margin-left: 12px;
+  font-weight: 600;
+}
+.Skill ul{
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.Skill li{
+  list-style: none;
+  margin: 5px 20px 5px 0px;
+  padding: 8px;
+  box-shadow: 4px 4px 9px 1px rgb(61, 61, 70);
+  border-radius: 5px;
+}
+.Experience .heading{
+  background-color: rgb(71, 67, 67);
+  color: white;
+  font-family:'Courier New', Courier, monospace;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.Experience .heading .exp{
+  margin-left: 7px;
+}
+.Experience .heading #exptoggle{
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 20px;
+  border: none;
+  padding: 6px;
+}
+.Experience #expcontent{
+  margin-top: 6px;
+  margin-left: 12px;
+  font-size: 19px;
+  font-weight: 600;
 }
